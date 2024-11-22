@@ -1,40 +1,42 @@
 {
   "expo": {
-    "name": "rick-and-morty-app",
-    "slug": "rick-and-morty-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "name"              : "Rick & Morty",
+    "slug"              : "rick-and-morty-app",
+    "version"           : "1.0.0",
+    "orientation"       : "portrait",
+    "icon"              : "./assets/images/icon.png",
+    "scheme"            : "myapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
+    "newArchEnabled"    : true,
+    "ios"               : {
+      "bundleIdentifier": "com.rick.and.morty.app",
+      "supportsTablet"  : true
     },
-    "android": {
+    "android"           : {
+      "package"     : "com.rick.and.morty.app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
       }
     },
-    "web": {
+    "web"               : {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "output" : "static"
     },
-    "plugins": [
+    "plugins"           : [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000",
+          "image"          : "./assets/images/splash-icon.png",
+          "imageWidth"     : 200,
+          "resizeMode"     : "contain"
         }
       ]
     ],
-    "experiments": {
+    "experiments"       : {
       "typedRoutes": true
     }
   }
